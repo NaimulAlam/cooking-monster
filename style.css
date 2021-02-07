@@ -1,0 +1,98 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    padding-left: 30px;
+    background-color:rgba(248,246,242,1);
+}
+h1 {
+    display: flex;
+}
+h1, h2, h3{
+    color: rgba(59, 45, 100, 1);
+}
+.searchBtnDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.searchArea{
+    display: flex;
+}
+.button{
+    color: white;
+    background-color: rgba(59, 45, 100, 1);
+    padding: 10px;
+    width: 100px;
+}
+.searchBox{
+    padding: 5px 15px;
+    width: 300px;
+}
+
+#meals{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.display-meal-box{
+    margin: 5px;
+    background-color: rgb(8, 204, 201);
+    border-radius: 20px;
+    width: 300px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.meal{
+    border-radius: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.meal img{
+    width: 299px;
+    border-radius: 20px;
+}
+
+.meal-name{
+    font-size: 30px;
+    color: blue;
+    text-decoration: none;
+}
+#meal-ingredients{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#meal-ingredients img{
+    width: 300px;
+    border-radius: 20px;
+}
+.meal-ingredients-show{
+    display: flex;
+    gap: 80px;
+}
+#empty-error{
+    text-align: center;
+    color: tomato;
+}
+.error-massage{
+    font-size: 30px;
+    text-align: center;
+    color: red;
+}
+.ingredients{
+    width: 300px;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+.ingredients h3{
+    font-size: 25px;
+    text-align: center;
+}
+.ingredients h4{
+    font-size: 20px;
+    text-align: center;
+}

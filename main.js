@@ -13,7 +13,7 @@ const searchBtn = () => {
     document.getElementById("searchInput").value = "";
 };
 
-//Displaying Meals by letter or word
+//Displaying Meals by matching name
 const displayMeals = (data) => {
     document.getElementById("search-error").innerHTML = "";
     const mealsDiv = document.getElementById("meals");

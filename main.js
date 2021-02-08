@@ -67,7 +67,7 @@ const getMealIngredients = (meal) => {
 //Ingrediants list making
 const displayIngredientsList = (list) => {
     let ingredients = "";
-    for (let i = 1; i < 21; i++) {
+    for (let i = 1; i < 15; i++) {
         ingredients +=
             list["strIngredient" + i] != "" || null
                 ? `<li>${list["strIngredient" + i]}</li>`

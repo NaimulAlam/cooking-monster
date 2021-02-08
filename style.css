@@ -118,4 +118,11 @@ h1, h2, h3{
     .searchBox{
         width: 200px;
     }
+    .meal-ingredients-show{
+        width: 350px;
+    }
+    .meal-ingredients-show img{
+        width: 350px;
+        height: 250px;
+    }
 }

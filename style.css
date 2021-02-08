@@ -33,52 +33,53 @@ h1, h2, h3{
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;
 }
 
 .display-meal-box{
-    margin: 5px;
-    background-color: rgb(8, 204, 201);
+    margin: 10px;
+    background-color: white;
     border-radius: 20px;
     width: 300px;
     padding-bottom: 5px;
     cursor: pointer;
 }
-
 .meal{
     border-radius: 20px;
     text-align: center;
     width: 300px;
 }
-
 .meal img{
     width: 299px;
-    border-radius: 20px;
+    border-radius: 10px 10px 0px 0px;
 }
-
 .meal-name{
-    font-size: 30px;
-    color: blue;
-    text-decoration: none;
+    font-size: 20px;
 }
 #meal-ingredients{
     margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 20px;
 }
 .meal-ingredients-show{
     background-color: white;
-    width: 400px;
+    width: 500px;
     text-align: center;
+    border-radius: 20px;
 }
 .meal-ingredients-show img{
-    width: 380px;
-    border-radius: 20px;
+    width: 500px;
+    height: 330px;
+    border-radius: 10px 10px 0px 0px;
 }
 .ingredients{
     padding: 20px;
     background-color: white;
     text-align: left;
+    border-radius: 0px 0px 10px 10px;
 }
 .ingredients li{
     list-style: square;
@@ -98,4 +99,20 @@ h1, h2, h3{
     font-size: 30px;
     text-align: center;
     color: red;
+}
+
+@media only screen and (max-width: 768px) {
+    #meals{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #meals{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

@@ -6,7 +6,7 @@ const meals = (name) => {
         .catch(() => errorHandler());
 };
 
-// Search Btn and input taking
+// Search Button and input taking
 const searchBtn = () => {
     searchInput = document.getElementById("searchInput").value;
     searchInput != "" ? meals(searchInput) : emptyError();
@@ -21,7 +21,7 @@ const displayMeals = (data) => {
     document.getElementById("meal-ingredients").innerHTML = "";
     document.getElementById("empty-error").innerHTML = "";
     data.meals.forEach((meal) => {
-        console.log(meal);
+
         const { strMeal, strMealThumb } = meal;
         const mealDiv = document.createElement("div");
         mealDiv.className = "meal";
